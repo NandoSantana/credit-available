@@ -30,7 +30,7 @@ services:
         environment:
             MYSQL_ROOT_PASSWORD: 'root123'
             MYSQL_ROOT_HOST: "%"
-            MYSQL_DATABASE: 'viasat'
+            MYSQL_DATABASE: 'credit'
             MYSQL_USER: 'fernando'
             MYSQL_PASSWORD: 'fernando@123'
             MYSQL_ALLOW_EMPTY_PASSWORD: 1
@@ -39,7 +39,7 @@ services:
         networks:
             - sail
         healthcheck:
-            test: ["CMD", "mysqladmin", "ping", "-p${fernando123}"]
+            test: ["CMD", "mysqladmin", "ping", "-p${fernando@123}"]
             retries: 3
             timeout: 5s
 
